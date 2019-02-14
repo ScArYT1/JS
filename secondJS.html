@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+<!-- <script type="text/javascript">
+
+
+
+var w = innerWidth; // latime ecran
+
+const BREAKPOINT = 900; // >900  calculator  <900 telefon
+if( w > BREAKPOINT ){
+
+  alert("PC");
+
+}else{
+
+alert("MOBILE");
+
+}
+
+</script>
+ -->
+
+<script type="text/javascript">
+
+var t = +prompt("Cate grade sunt?") // + convertim valoarea introdusa in nr da nu in string (scris)
+
+if (t < -20 || t > 50 || t === null  || t === "") {
+
+  document.write("OOOPS")
+
+}else{
+
+document.write('<div>-20|-10|  0| 10| 20| 30| 40| 50|</div>');
+
+var w = (t + 20) * 2.8;
+
+document.write('<div style="background:red; height:5px; width:'+w+'px;"></div>')
+
+if (t>= -20 &&  t <= 0) {
+
+  document.write("ReCE");
+
+}else{
+  if (t <= 10) {
+    document.write("NORM")
+
+  }else{
+  document.write("Cald");
+}
+}
+}
+// -20 ... 0 -> frig
+// 1 ... 10 -> norm
+// 11 ...50 -> cald
+
+</script>
+
+
+
+
+</body>
+</html>
