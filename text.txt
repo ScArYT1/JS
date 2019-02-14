@@ -1,0 +1,203 @@
+Data: 27.12.18; {
+  htmlbook.coms
+  htmlbook.ru
+
+
+    SASS/SCSS/LESS/STYLUS
+    SCSS mai mult o sa-l folosim;
+    ---> CSS Preprocessor;
+    ---> CSS with super powers;
+    ---> CSS + programming;
+
+                * selector +
+                * types
+                * variables
+                * operators
+                * flow-control
+                * functions
+                * mixins
+
+
+}
+
+MODERN CSS --> FLOAT, DISPLAY, INLINE-BLOCK, TABLE, POSITION...
+flex --> CSS FLEX/FLEXBOX 2017+ PRODUCTION
+         CSS GRID 2019+ PRODUCTION (VA FI GATA)
+
+         1) Float++, inline-block++
+         2) Smart
+         3) Less Code
+
+  CSS FLEX/FLEXBOX 2017+ PRODUCTION
+
+
+      Container{
+
+         * parent   >   child
+          (container)  (items)
+         * axis
+         * left, right + start, end
+         * center + spacing
+         * reverse
+         * direction (row/column) }
+      Items{
+
+         * order
+         * (proportions) shrink/grow
+
+
+web UI/web frontend
+
+    Frontend frameworks
+
+    css frameworks
+
+    libraries + frameworks
+
+    frameworks
+    + fast spin off
+    + ready to use components
+    + xbrowser
+    + adaptive / responsive
+    + mobile first (version)
+    + plugins / extensions
+    + 100+ developers
+    + bugs /...
+    + documentation + tutorials + strategy
+    + trust
+
+        *top css frameworks*
+
+    1) BOOTSTRAP
+    2) SEMANTIC-UI
+    3) FOUNDATION
+    4) MATERIALIZE
+    5) MATERIAL-UI
+    6) PURE CSS
+    7) SKELETON
+    8) UIKIT
+    9) MILLIGRAM
+    10) SUSY
+
+
+
+
+
+                  ---->  JAVA SCRIPT <----
+
+          JS --- JAVASCRIPT  (ECMAScript / ES5 /ES6 (ES2015), ES7 | {ES8 (future)} )
+
+          WEB Programing Language
+
+          + Browser (frontend)
+
+          (HTMl - structure, CSS - style, JS - behaviour)
+
+          + Node.js (General Purpose)
+          + Gaming
+          + Apps
+          + Extensions
+          + Data Exchange
+          + ...
+
+
+          HTML -> document (
+          elemente
+          )
+
+          JS -> script / programm(
+          * expressions / commands / actions ;
+
+          * case sensitive --> x nu este X
+
+          * expressions:
+              - identifiers/names ---> alert("Hi")
+              - operators/operations (actions) ---> +,-,*,/, ...
+              - values ---> 2+2, "Hi", ...;
+              -reserved words ---> if, else, for, switch, ...
+              - prefix/labels ----> const, let, var ...
+              - { }  -----> container/block code
+              - comments /* block comment*/, //line
+
+          * basics functions (read/write):
+              - alert(...) ---> doar info ----> user
+              - confirm(...) ---> info ---> user ---> reactie
+              - prompt(...) ---> info ---> user ----> valori
+              - console.log(...) ----> console (F12)
+              - document.write(...) ---> body
+
+          * data types
+              - number (100, -1, 0.5, ...)
+              - string ("hello", "545asd55asd4", "Chisinau", ...)
+                    + "quotes", 'single', `modern`;
+              - Boolean (true / false)
+          * variables
+              - var denumire = valoare;
+              -
+          )
+
+
+
+
+            Cand dam o denumire constatei:
+
+            * "CONSTANT_VALUE"
+
+            Denumiri var:
+
+            * "snake_case"
+
+
+              --------->  OPERATORS  <------------
+
+
+              *  Unary, binary, ternary
+
+              1 + 2 binary
+
+              10+  unary
+
+
+              * Arithmetic  (+, /, -, %)-----> Number
+
+              * Comparison (<,>, <=, >=, == (Value), === (identic), !=, !== )
+
+              * logic ( ! - not, &&,)
+
+
+
+
+              // Linear programing
+
+              // alert("A");  //"" String
+              // 0-0; //Number
+              // alert("B")
+              // 1+1;
+              // alert("C");
+
+              // non-linear programming
+
+              // flow control structures
+
+              // branching -- (ramificare) -- if/else, switch/case
+              // looping -- (cicluri) -- while, for ,do while, break, continue
+
+
+
+
+              if( expression/condition) {
+              // code if true
+              } else{
+              //code if false
+              }
+
+              // continue
+
+
+              ATTENT***********************
+
+              Cand apasam cancel in alert apare ReCE,
+              null < 0 (false)
+              null == 0 (false)
+              null > 0 (false)
+              null <= (true) prima operatiune
