@@ -1,17 +1,64 @@
 
 <script type="text/javascript">
 
-var n=10;
+// var n=10;
+//
+// while (n <= 100) {
+//
+//   document.write(n + "<br>")
+//
+//   n+=10; // sau n=n+10;
+//   // ++ adauga cu 1
+// }
+//
+//
+//
 
-while (n >= 1) {
 
-  document.write(n + "<br>")
+// MUNCA UNUI DEV TIMP DE O LUNA
+// 1..31 (Ianuarie)
+// 1-luni
+// luni-vineri (8 ore)
+// sambata (4 ore)
+//per ora - 10$ / ora (luni-vineri), 15$ / ora (weekend)
 
-  n--;
-  // ++ adauga cu 1
+// 1) calculam salariu pe Ianuarie
+// 2) calculat impozitul pe venit (ajiutam fiscu) -12%
+// 3)
+
+var date=1;
+var salariu=0.00; // $
+var ore_l_v= prompt ("cate ore lucrezi pe zi (luni-vineri)");
+var ore_s=prompt ("cate ore lucrezi pe zi (Sambata)");
+const REMUNERARE_L_V = 10;
+const REMUNERARE_S = 15;
+const IMPOZIT = 0.12;
+
+document.write('<table border="2">')
+while (date <= 31) {
+// weekenduri -- red
+
+if (date % 7 == 6 || date % 7 == 0) {
+    document.write('<tr><td bgcolor="red">' + date + '</td></tr>');
+
+    if (date % 7 == 6) {
+        salariu += ore_s * REMUNERARE_S;
+
+    }
+
+}else {
+    document.write('<tr><td>' + date + '</td></tr>');
+    salariu += ore_l_v * REMUNERARE_L_V;
 }
 
 
 
+    date++;
 
+}
+
+document.write('</table>');
+
+document.write("Salariu lunar:" + salariu + "$");
+document.write('<br>' +"Impozit: " + salariu * IMPOZIT + "$")
 </script>
