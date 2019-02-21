@@ -12,7 +12,19 @@ var miner = 2;
 
 
 for (var step = 1; step<=10; step++) {
-  var content =`Opa!;`// `` --> template string
+
+if(step==miner){
+    var content =`
+    <div class="miner">
+
+    </div>`;// `` --> template string
+}else {
+  var content =``;
+}
+
+
+
+
   document.write(
     `<div class="grass">
     ${content}
