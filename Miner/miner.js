@@ -10,6 +10,20 @@ var miner = 2;
 
 //let's show zer map :)
 
+function move_left(){
+  miner--;
+  show();
+}
+
+function move_right(){
+  miner++;
+  show();
+}
+
+function show(){
+  var div= document.getElementById('map');
+// conectam variabila div cu elmenetul dupa id
+div.innerHTML=``; // curatam divu-ul
 
 for (var step = 1; step<=10; step++) {
 
@@ -25,10 +39,14 @@ if(step==miner){
 
 
 
-  document.write(
+  div.innerHTML +=
     `<div class="grass">
     ${content}
     </div>`
-  );
+  ;
 
 }
+}
+
+
+show();
