@@ -201,3 +201,83 @@ web UI/web frontend
               null == 0 (false)
               null > 0 (false)
               null <= (true) prima operatiune
+
+
+
+
+
+
+              ---------------While-------------
+              // start conditions
+              * while(expression/condition){
+              // code to repeat
+              // step
+              }
+
+
+              ---------------Switch--------------
+
+              switch ( expression ){
+              case value1: codeA; break;
+              case value2: codeB; break;
+              case value3: codeC; break;
+              //....
+              default: dodeDefault; break;
+              }
+
+
+              ------------for
+
+              for (start; condition; steps){
+              code
+              }
+
+
+                //////////////////////////////Do While\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+                //looping
+
+              //start
+              do{
+              //code
+              //steps
+              }while(condition);
+
+
+
+              animation********
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              function*******
+
+              //function == action(alert,prompt,etc)
+              //function == block of code with name()
+              //function == subroutine ()
+              //americans function -> black box (engine)
+
+                  // + DRY == don't repeat yourself
+                  // + Separation of concerns(separarea dupa sens)
+                  // + SOLID!!!
+
+              // ! declare (function) + call
+                    declare function f(){
+
+                    }
+                    call f()
+
+              // ! capsule
+              // ! parameters / arguments
+              // ! return values
+              
