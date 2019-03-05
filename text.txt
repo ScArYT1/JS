@@ -272,12 +272,16 @@ web UI/web frontend
                   // + SOLID!!!
 
               // ! declare (function) + call
-                    declare function f(){
-
+                    declare function name(argument1, arg2, arg..){
+                      instructions1;
+                      ins2;
+                      insn;
+                      return value;
+                      Denumiri pentru function
+                      (cuvant mic apoi cu mare ex:opanaNuMaiAmCuvinte)
                     }
-                    call f()
+                    call: name()
 
               // ! capsule
               // ! parameters / arguments
               // ! return values
-              
