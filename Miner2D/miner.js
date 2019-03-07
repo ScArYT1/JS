@@ -6,8 +6,15 @@
 // var miner = 2;
 
 
-var miner_row = 2;//randuri //pentru random pozitie var = Math.round(Math.random)*10;
-var miner_col = 2;//coloane //pentru random pozitie var = Math.round(Math.random)*10;
+const BOMB_COL1 = Math.floor(Math.random() * 10)+1;
+const BOMB_ROW1 = Math.floor(Math.random() * 10)+1;
+const BOMB_COL2 = Math.floor(Math.random() * 10)+1;
+const BOMB_ROW2 = Math.floor(Math.random() * 10)+1;
+const BOMB_COL3 = Math.floor(Math.random() * 10)+1;
+const BOMB_ROW3 = Math.floor(Math.random() * 10)+1;
+
+var miner_row = Math.round(Math.random()*10);
+var miner_col = Math.round(Math.random()*10); //coloane //pentru random pozitie var = Math.round(Math.random()*10);
 
 
 
@@ -79,17 +86,33 @@ for (var col = 1; col<=10; col++) {
   if(miner_row == row && miner_col == col){
     content = '<div class="miner"></div>'
   }
+        /////////////////BOMB//////////////////
+        if (BOMB_COL1 == col && BOMB_ROW1 == row) {
+          var content2 = `<div class="bomb"></div>`
+        }else{
+          var content2 = ``;
+        }
 
+        if (BOMB_COL2 == col && BOMB_ROW2 == row) {
+          var content3 = `<div class="bomb"></div>`
+        }else{
+          var content3 = ``;
+        }
 
+        if (BOMB_COL3 == col && BOMB_ROW3 == row) {
+          var content4 = `<div class="bomb"></div>`
+        }else {
+          var content4 = ``;
+        }
+        /////////////////////BOMB/////////////////
+        div.innerHTML +=
+          `<div class="grass">
+          ${content}${content2}${content3}${content4}
+          </div>`;
 
-      div.innerHTML +=
-        `<div class="grass">
-        ${content}
-        </div>`;
 
 }
 }
 /////////////ASTA ESTE UN RAND///////////////
 }
-
 show();
