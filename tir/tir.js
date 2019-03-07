@@ -1,5 +1,6 @@
 var bullets = 10; //patroane
 
+
 function addDuck(){
   var lake = document.getElementById('lake');
   var duck = `<div id="duck" class="duck" onclick ="killDuck()"></div>`
