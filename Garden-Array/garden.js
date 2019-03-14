@@ -8,6 +8,7 @@ const CUCUMBER_PRICE = 10;
 const MELON_PRICE = 20;
 const TOMATO_PRICE = 30;
 
+var money = 100;
 
 // celulele de tip nr
 var garden = [    // index
@@ -34,7 +35,7 @@ function show(){
       }if( garden[i] == CUCUMBER){
         div.innerHTML += '<div class ="cucumber" onclick = "gather(CUCUMBER)"> </div>';
       }if( garden[i] == EMPTY){
-        div.innerHTML += '<div class ="empty"> </div>';
+        div.innerHTML += '<div class ="empty" onclick = "sad(EMPTY)" > </div>';
       }if( garden[i] == TOMATO){
         div.innerHTML += '<div class ="tomato" onclick = "gather(TOMATO)"> </div>';
       }
@@ -53,5 +54,29 @@ function gather( vegetable ){
   alert(TOMATO_PRICE);
 }
 }
+
+//////////////////////////CE sadim?///////////////////
+
+function sad(vegetable){
+  if(vegetable == EMPTY){
+  prompt('Ce sadim? 1, 2, 3?');
+    if(vegetable == 1){
+      alert(c);
+
+  }
+}
+}
+
+////////////////////////Ce sadim?///////////////////
+
+
+// function take_money(){
+//   var div = document.getElementById('money');
+//   div.innerHTML = '';
+//   if(garden == money){
+//     div.innerHTML += '<div class="money"></div>'
+//
+//   }
+// }
 
 show();
